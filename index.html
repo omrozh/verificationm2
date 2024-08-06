@@ -2,109 +2,93 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verification SVG</title>
+    <title>Verification Node-2</title>
+  <link rel="stylesheet" href="https://verification.curacao-egaming.com/assets/styles/styles.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
-        body{
-            font-family: 'Roboto', sans-serif;
-        }
-        .right-box{
-            margin-left: 75px;
-        }
-        @media screen and (max-width: 800px) {
-            .right-box{
-                margin-left: 0;
-            }
-        }
-        .break {
-            flex-basis: 100%;
-            height: 0;
+        .content-type-1:before{
+            background: white;
         }
     </style>
 </head>
-<body style="background-image: url('/content-2-bg.png'); margin: 0; padding: 0; background-size: cover;">
-    <div style="width: 100vw; height: 100vh; position: fixed; background-color: #7dd1ec; opacity: 0.2;">
+<body style="background: #00162a">
+<div style="position: fixed; width: 100vw; height: 100vh; background: url('https://verification.gamblingsvg.com/content-2-bg.png'); opacity: .3">
 
-    </div>
-    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; margin: auto; width: fit-content; height: fit-content; padding: 15px; border-radius: 5px; background-color: white;">
-        <img src="Flag.png" style="width: 50px; display: inline-block; vertical-align: middle;" alt="">
-        <div style="display: inline-block; vertical-align:middle; margin-left: 10px;">
-            <p style="margin-bottom: 0;">St. Vincent and the Grenadines</p>
-            <p style="margin-top: 5px;">Gambling Commission</p>
-        </div>
-        <div style="display: inline-block; vertical-align: middle;" class="right-box">
-            <p style="font-size: 2rem;">License Verification</p>
-        </div>
-        <br>
-        <div style="display: flex; flex-direction: row;">
-            <div style="clear: both; margin-top: 15px; flex: 1;">
-                <p style="color: blue; margin-bottom: 0;">
-                    Company Name
-                </p>
-                <p style="color: black; margin-top: 5px;">
-                    M2 Entertainment Limited
-                </p>
-            </div>
-            <div style="clear: both; margin-top: 15px; flex: 1;">
-                <p style="color: blue; margin-bottom: 0;">
-                    Address
-                </p>
-                <p style="color: black; margin-top: 5px; max-width: 200px;">
-                    Euro House, Richmond Hill Road, P.O. Box 2897, Kingstown, St Vincent and the Grenadines
-                </p>
-            </div>
-        </div>
-        <div style="display: flex; flex-direction: row;">
-            <div style="clear: both; margin-top: 15px; flex: 1;">
-                <p style="color: blue; margin-bottom: 0;">
-                    Contact Email
-                </p>
-                <p style="color: black; margin-top: 5px;">
-                    contact@m2.net
-                </p>
-            </div>
-            <div style="clear: both; margin-top: 15px; flex: 1;">
-                <p style="color: blue; margin-bottom: 0;">
-                    Page Generated On
-                </p>
-                <p style="color: black; margin-top: 5px;" id="page-gen">
-                    
-                </p>
-            </div>
-            <script>
-                var currentdate = new Date(); 
-                var datetime = currentdate.getDate() + "/"
-                                + (currentdate.getMonth()+1)  + "/" 
-                                + currentdate.getFullYear() + " "  
-                                + currentdate.getHours() + ":"  
-                                + currentdate.getMinutes()
-                document.getElementById("page-gen").innerText = datetime;
-            </script>
-        </div>
-        <div style="display: flex; flex-direction: row;">
-            <div style="clear: both; margin-top: 15px; flex: 1;">
-                <p style="color: blue; margin-bottom: 0;">
-                    Registered Website
-                </p>
-                <p style="color: black; margin-top: 5px;">
-                    kadromilyon.com
-                </p>
-            </div>
-            <div style="clear: both; margin-top: 15px; flex: 1;">
-                <p style="color: blue; margin-bottom: 0;">
-                    Alternate Designation
-                </p>
-                <p style="color: black; margin-top: 5px; max-width: 200px;">
-                    m2-entertainment.com
-                </p>
-            </div>
-        </div>
-        <br>
-        <center style="color: white; background-color: #10d083; width: 100; padding: 10px; box-sizing: border-box; font-size: 1rem;">
-            License Status: Licensed
-        </div>
-        
-    </div>
+</div>
+  <div class="container" id="top" style="position: relative; z-index: 99">
+      <div class="wrapper">
+        <div id="contentValid" class="content content-type-1">
+          <div class="row logo-content">
+              <div class="col-md-4">
+                  <div class="images-box">
+                      <img src="https://verification.gamblingsvg.com/Flag.png" id="img1">
+                  </div>
+              </div>
+              <div class="col-md-8">
+                  <div id="Div3" class="text-2">
+                      <h2>SVG Gambling Commission <span>License Verification</span></h2>
+                  </div>
+              </div>
+          </div>
+
+          <ul class="c-table hebele">
+              <li>
+                  <div class="title">Company Name</div>
+                  <div id="companyName" class="text">M2 Entertainment Limited</div>
+              </li>
+              <li>
+                  <div class="title">Address</div>
+                  <div id="Address" class="text">Euro House, Richmond Hill Road, P.O. Box 2897, Kingstown, St Vincent and the Grenadines</div>
+              </li>
+              <li>
+                  <div class="title">Contact Email</div>
+                  <div id="companyEmail" class="text">destek@kadromilyon.com</div>
+              </li>
+              <li>
+                  <div class="title">Page Generated On</div>
+                  <div id="generetedOn" class="text wrap-text"></div>
+                  <script>
+                      var currentdate = new Date();
+                    var datetime = currentdate.getDate() + "/"
+                                    + (currentdate.getMonth()+1)  + "/"
+                                    + currentdate.getFullYear() + " "
+                                    + currentdate.getHours() + ":"
+                                    + currentdate.getMinutes()
+                    document.getElementById("generetedOn").innerText = datetime;
+                  </script>
+              </li>
+              <li>
+                  <div class="title">Registered Website</div>
+                  <div id="domainName" class="text text-green">kadromilyon.com</div>
+              </li>
+              <li>
+                  <div class="title">Alternate Designation</div>
+                  <div id="referrerName" class="text text-green">kadromilyon1.com</div>
+              </li>
+          </ul>
+          <a href="https://www.curacao-egaming.com/public-and-players/authenticity" id="validtyCheck" target="blank" class="btn text">Status : LICENSED</a>
+
+          <h4>License Verification Terms and Conditions (Disclaimer)</h4>
+          <p>
+              This License Verification page is provided as a service to verify the present licensing
+              status
+              of the Company and Website named above as an IP Provider, who operates under under
+              license reference
+              19289/SVG issued to M2 Entertainment Limited.
+          </p>
+          <p>
+              Creating or maintaining any links from another website to this License Verification page
+              without
+              our prior written permission is prohibited.
+          </p>
+          <p>
+              For authenticity, make sure that the url of this website starts with
+              verification.gamblingsvg.com.
+          </p>
+      </div>
+        <div id="contentCertificate" class="content content-type-1">
+            <img src="license.png" style="width: 100%; height: 100%; border-radius: 15px;" alt="">
+      </div>
+  </div>
+
 </body>
 </html>
