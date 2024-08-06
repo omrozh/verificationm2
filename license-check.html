@@ -134,10 +134,11 @@ function __doPostBack(eventTarget, eventArgument) {
                               <span style="color: black; flex: 1">kadromilyon1.com</span>
                             </div>
                           </div>
-
-
-
-
+                          <div id="not_found" style="display: none">
+                            <div style="display: flex; flex-direction: row">
+                              <b style="color: #1e7bf2; flex: 1;">Company Name</b>
+                              <span style="color: black; flex: 1">No Matching Company Found</span>
+                            </div>
                         </div>
                     </div>
                     <!-- content end -->
@@ -149,9 +150,11 @@ function __doPostBack(eventTarget, eventArgument) {
 
 <script>
   function validate(){
-    if(document.getElementById("website") === "kadromilyon.com"){
-      return;
+    if(document.getElementById("website").value !== "kadromilyon.com"){
+        document.getElementById("not_found").style.display = "block";
+        return;
     }
+    document.getElementById("not_found").style.display = "none";
     document.getElementById("valid-cont").style.display = "block"
   }
 </script>
