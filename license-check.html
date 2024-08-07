@@ -150,7 +150,7 @@ function __doPostBack(eventTarget, eventArgument) {
 
 <script>
   function validate(){
-    if(document.getElementById("website").value !== "kadromilyon.com"){
+    if(document.getElementById("website").value.toLowerCase() !== "kadromilyon.com"){
         document.getElementById("not_found").style.display = "block";
         return;
     }
