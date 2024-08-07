@@ -121,17 +121,12 @@ function __doPostBack(eventTarget, eventArgument) {
                             <br>
                             <div style="display: flex; flex-direction: row">
                               <b style="color: #1e7bf2; flex: 1;">Email</b>
-                              <span style="color: black; flex: 1">destek@kadromilyon.com</span>
+                              <span style="color: black; flex: 1">destek@m2-entertainment.com</span>
                             </div>
                             <br>
                             <div style="display: flex; flex-direction: row">
                               <b style="color: #1e7bf2; flex: 1;">Registered Website</b>
-                              <span style="color: black; flex: 1">kadromilyon.com</span>
-                            </div>
-                            <br>
-                            <div style="display: flex; flex-direction: row">
-                              <b style="color: #1e7bf2; flex: 1;">Alternate Designation</b>
-                              <span style="color: black; flex: 1">kadromilyon1.com</span>
+                              <span style="color: black; flex: 1" id="reg_web">kadromilyon.com</span>
                             </div>
                           </div>
                           <div id="not_found" style="display: none">
@@ -150,11 +145,13 @@ function __doPostBack(eventTarget, eventArgument) {
 
 <script>
   function validate(){
-    if(document.getElementById("website").value.toLowerCase() !== "kadromilyon.com"){
+    let registered_websites = ["kadromilyon.com", "lidyacasino.com", "lidyacasino100.com", "kadromilyon1.com"];
+    if(!registered_websites.includes(document.getElementById("website").value.toLowerCase())){
         document.getElementById("not_found").style.display = "block";
         return;
     }
     document.getElementById("not_found").style.display = "none";
+    document.getElementById("reg_web").innerHTML = document.getElementById("website").value.toLowerCase();
     document.getElementById("valid-cont").style.display = "block"
   }
 </script>
