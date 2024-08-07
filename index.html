@@ -39,7 +39,7 @@
           <ul class="c-table hebele">
               <li>
                   <div class="title">Company Name</div>
-                  <div id="companyName" class="text">M2 Entertainment Limited</div>
+                  <div id="companyName" class="text">M2 Entertainment LLC</div>
               </li>
               <li>
                   <div class="title">Address</div>
@@ -47,7 +47,7 @@
               </li>
               <li>
                   <div class="title">Contact Email</div>
-                  <div id="companyEmail" class="text">destek@kadromilyon.com</div>
+                  <div id="companyEmail" class="text">destek@m2-entertainment.com</div>
               </li>
               <li>
                   <div class="title">Page Generated On</div>
@@ -70,6 +70,17 @@
                   <div class="title">Alternate Designation</div>
                   <div id="referrerName" class="text text-green">kadromilyon1.com</div>
               </li>
+              <script>
+                    let license_dict = {
+                        "19289/SVG": ["kadromilyon.com", "kadromilyon1.com"],
+                        "19219/SVG": ["lidyacasino.com", "lidyacasino100.com"],
+                    }
+                    var url_string = document.location; 
+                    var url = new URL(url_string);
+                    var c = url.searchParams.get("license");
+                    document.getElementById("domainName").innerText = license_dict[c][0];
+                    document.getElementById("referrerName").innerText = license_dict[c][1];
+              </script>
           </ul>
           <a href="/license-check.html" id="validtyCheck" target="blank" class="btn text">Status : LICENSED</a>
 
